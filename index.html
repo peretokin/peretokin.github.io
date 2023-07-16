@@ -1,5 +1,7 @@
+<html lang="ru">
 <div id="myDiv"></div>
 <h1>{{category}}</h1>
+<body>
 <script>
 data = [{
       type: "treemap",
@@ -8,6 +10,7 @@ data = [{
 }]
 
 Plotly.newPlot('myDiv', data)
-</script>
 
-{% endblock %}
+</script>
+</body>
+</html>
