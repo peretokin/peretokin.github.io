@@ -1,11 +1,12 @@
-<!doctype html>
-<html>
-<head>
+{% extends 'base.html' %}
 
-</head>
-<body>
-<div id="myDiv">
-<h1>hui</h1>
+{% block title %}
+timer_list
+{% endblock %}
+
+{% block body %}
+<div id="myDiv"></div>
+<h1>{{category}}</h1>
 <script>
 data = [{
       type: "treemap",
@@ -14,8 +15,6 @@ data = [{
 }]
 
 Plotly.newPlot('myDiv', data)
-
 </script>
-</div>
-</body>
-</html>
+
+{% endblock %}
