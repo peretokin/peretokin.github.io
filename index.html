@@ -1,20 +1,13 @@
-<!doctype html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>timer</title>
-</head>
-<body>
-    <div id="main">
-        <h1> таймер </h1>
-        <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    </div>
+<div id="myDiv"></div>
+<h1>{{category}}</h1>
+<script>
+data = [{
+      type: "treemap",
+      labels: ["DD", "cc", "scs"],
+      parents: ["ss", "ss", "DD"]
+}]
 
+Plotly.newPlot('myDiv', data)
+</script>
 
-
-
-</body>
-</html>
+{% endblock %}
