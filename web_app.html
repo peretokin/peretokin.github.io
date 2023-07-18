@@ -10,8 +10,8 @@
 <body>
 
     <div id="main">
-        <h1>Задачи</h1>
-        <div id="name"></div>
+        <h1>Задjачи</h1>
+        
         <form id = "form">
             <input type = "text" placeholder = "task" id = "task">
             <input type = "text" placeholder = "category" id = "category">
@@ -21,11 +21,11 @@
         <script>
             let tg = window.Telegram.WebApp;
             let sub = document.getElementById("create");
-            document.getElementById("name").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name;
+            namme = tg.initDataUnsafe.user;
             sub.addEventListener("click", () => {
                 let task = document.getElementById("task").value;
                 let category = document.getElementById("category").value;
-                let name = document.getElementById("name").value;
+                let name = namme;
 
             let data = {
 
