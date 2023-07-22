@@ -27,13 +27,13 @@
                 let task = document.getElementById("task").value;
                 let category = document.getElementById("category").value;
 
-
+            let name =  tg.initData.user.first_name;
             let data = {
             task: task,
             category: category
-            
             }
             tg.sendData(JSON.stringify(data));
+            tg.sendData(JSON.stringify(name));
             tg.close();
             });
         </script>
