@@ -10,7 +10,7 @@
 <body>
 
     <div id="main">
-        <h1>Задjачи</h1>
+        <h1>Задjdачи</h1>
 
         <form id = "form">
             <input type = "text" placeholder = "task" id = "task">
@@ -30,8 +30,8 @@
 
             let data = {
             task: task,
-            category: category,
-            name: tg.initData.user.first_name
+            category: category
+            
             }
             tg.sendData(JSON.stringify(data));
             tg.close();
