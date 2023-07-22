@@ -10,7 +10,7 @@
 <body>
 
     <div id="main">
-        <h1>Задjачи</h1>
+        <h1>Задачи</h1>
 
         <form id = "form">
             <input type = "text" placeholder = "task" id = "task">
@@ -32,7 +32,7 @@
 
             task: task,
             category: category,
-            name: window.Telegram.WebApp.initData.user.first_name
+            name: Telegram.WebApp.initData.user.first_name
             }
 
             tg.sendData(JSON.stringify(data));
