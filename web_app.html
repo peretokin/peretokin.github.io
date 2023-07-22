@@ -10,7 +10,7 @@
 <body>
 
     <div id="main">
-        <h1>Задjdачи</h1>
+        <h1>Задjfdачи</h1>
 
         <form id = "form">
             <input type = "text" placeholder = "task" id = "task">
@@ -26,9 +26,11 @@
 
                 let task = document.getElementById("task").value;
                 let category = document.getElementById("category").value;
+                let name = string(tg.initData.user.username);
             let data = {
             task: task,
-            category: category
+            category: category,
+            name: name
             }
             tg.sendData(JSON.stringify(data));
             tg.close();
